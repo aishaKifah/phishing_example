@@ -4,33 +4,33 @@
   <meta charset="UTF-8" />
   <title>Login Page</title>
   <style>
+
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing: border-box; /* يمنع مساحات غير مرغوبة */
     }
 
     html, body {
       width: 100%;
       height: 100%;
+      overflow-x: hidden;
       font-family: Arial, sans-serif;
-      overflow: hidden; /* يمنع أي scroll أفقي */
     }
 
-    /* الحاوية التي تغطي كامل الشاشة */
+    /* حاوية الخلفية */
     .hero {
-      width: 100%;
-      height: 100%;
-      background: url('Capture.PNG') no-repeat center top;
-      background-size: cover; /* تغطي كامل الشاشة بدون جوانب بيضاء */
-      position: relative; /* لكي نتمكن من وضع الزر فوق الصورة */
+      width: 100vw;
+      height: 100vh; /* يغطي شاشة المتصفح بالكامل */
+      background: url('Capture.PNG') no-repeat center center;
+      background-size: cover; /* يغطي بدون جوانب بيضاء */ :contentReference[oaicite:3]{index=3}
+      position: relative;
     }
 
-    /* زر تسجيل الدخول */
     .login-btn {
-      position: absolute; /* يسمح بوضعه في أي مكان داخل الحاوية */
-      top: 60px; /* من الأعلى */
-      right: 40px; /* من اليمين */
+      position: absolute;
+      top: 50px; /* ينزّل الزر لأسفل قليلًا */
+      right: 40px;
       background-color: #ffcc00;
       color: #003087;
       padding: 14px 26px;
@@ -44,6 +44,7 @@
     .login-btn:hover {
       background-color: #e6b800;
     }
+
   </style>
 </head>
 <body>
